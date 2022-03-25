@@ -2,17 +2,13 @@ package com.bridgelabz;
 
 public class Main {
 	public static void main(String[] args) {
+		
+		Integer[] integerArray = { 12, 21, 23, 43, 85, 2, 45, 25, 88};
+		Double[] doubleArray = { 12.0, 21.0, 23.0, 43.0, 85.0, 2.0, 45.0, 25.0, 88.0};
+		String[] stringArray = { "Suman", "Virat", "Lion", "ETC"};
 
-		Integer x = 98, y = 100, z = 500;
-		int maxInt = new FindMaximum<Integer>(x, y, z).maximum();
-		System.out.println("Maximum is : " + maxInt);		
-
-		Double x1 = 598.0, y1 = 100.0, z1 = 500.0;
-		double maxDouble = new FindMaximum<Double>(x1, y1, z1).maximum();
-		System.out.println("Maximum is : " + maxDouble);	
-
-		String x11 = "Suman", y11 = "Virat", z11 = "Developer";
-		String maxString = new FindMaximum<String>(x11, y11, z11).maximum();
-		System.out.println("Maximum is : " + maxString);	
+		new FindMaximum<Integer>(integerArray).maximum();
+		new FindMaximum<Double>(doubleArray).maximum();
+		new FindMaximum<String>(stringArray).maximum();
 	}
 }
