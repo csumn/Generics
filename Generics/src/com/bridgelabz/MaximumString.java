@@ -1,8 +1,8 @@
 package com.bridgelabz;
 
-public class MaximumNumber {
-	public static Double findMaximumNumber(Double x, Double y, Double z) {
-		Double max = x;
+public class MaximumString {
+	public static String findMaximumString(String x, String y, String z) {
+		String max = x;
 		if (y.compareTo(max) > 0) {
 			max = y;
 		}
